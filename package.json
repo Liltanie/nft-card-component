@@ -1,0 +1,17 @@
+{
+  "name": "liltanie-nft",
+  "version": "1.0.0",
+  "description": "![Design preview for the NFT preview card component coding challenge](./design/desktop-preview.jpg)",
+  "main": "src/index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss/main.scss src/css/main.css"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Candela Bramucci <candelabramucci05@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.45.0"
+  }
+}
