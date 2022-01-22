@@ -11,6 +11,13 @@
             sizes="32x32"
             href="./images/favicon-32x32.png"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+
         <link rel="stylesheet" href="css/main.css" />
 
         <title>NFT preview card component</title>
@@ -22,33 +29,37 @@
                     src="./assets/image-equilibrium.jpg"
                     alt="nft Equilibrium image"
                 />
-                <h1>Equilibrium #3429</h1>
-                <p>Our Equilibrium collection promotes balance and calm.</p>
-                <p>
-                    <img
-                        src="./assets/icon-ethereum.svg"
-                        alt="icon ethereum"
-                    />0.041 ETH
-                </p>
-                <p>
-                    <img src="./assets/icon-clock.svg" alt="icon clock" />3 days
-                    left
-                </p>
+                <div class="card__main">
+                    <h1>Equilibrium #3429</h1>
+                    <p>Our Equilibrium collection promotes balance and calm.</p>
 
-                <div>
+                    <p class="p-icon p-icon--eth">
+                        <img
+                            src="./assets/icon-ethereum.svg"
+                            alt="icon ethereum"
+                        />
+                        0.041 ETH
+                    </p>
+                    <p class="p-icon p-icon--days-left">
+                        <img src="./assets/icon-clock.svg" alt="icon clock" />
+                        3 days left
+                    </p>
+                </div>
+
+                <div class="card__footer">
                     <img src="./assets/image-avatar.png" alt="Jules avatar" />
                     <p>Creation of <a href="">Jules Wyvern</a></p>
                 </div>
             </article>
         </main>
 
-        <div class="attribution">
+        <!-- <div class="attribution">
             Challenge by
             <a
                 href="https://www.frontendmentor.io?ref=challenge"
                 target="_blank"
                 >Frontend Mentor</a
             >. Coded by <a href="#">Your Name Here</a>.
-        </div>
+        </div> -->
     </body>
 </html>

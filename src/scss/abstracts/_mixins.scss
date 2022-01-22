@@ -1,0 +1,14 @@
+@use './variables' as *;
+
+@mixin text-cyan-hover {
+    &:hover {
+        color: $cyan;
+        cursor: pointer;
+        transition: 250ms ease-in-out;
+    }
+}
+
+@mixin img-view-hover {
+    cursor: pointer;
+    background-color: $cyan;
+}
