@@ -15,7 +15,7 @@
         position: relative;
 
         &:hover {
-            @include view-overlay($cyan, url(/src/assets/icon-view.svg));
+            @include view-overlay($cyan, url(/assets/icon-view.svg));
         }
     }
 

@@ -438,7 +438,7 @@ p {
 .card .img-container:hover::before {
   content: "";
   background-color: rgba(0, 255, 247, 0.5);
-  background-image: url(/src/assets/icon-view.svg);
+  background-image: url(/assets/icon-view.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 3rem;
