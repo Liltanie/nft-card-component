@@ -2,14 +2,21 @@
 
 .card {
     background-color: $card-color;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     padding: 1.5rem;
-    max-width: 25rem;
+    max-width: 25em;
     width: 90vw;
 
-    > img {
-        @include img-view-hover;
-        border-radius: 1rem;
+    .img-container {
+        display: grid; //for the container to have the same height as the image
+        border-radius: 0.5rem;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+
+        &:hover {
+            @include view-overlay($cyan, url(/src/assets/icon-view.svg));
+        }
     }
 
     .p-icon {

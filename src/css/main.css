@@ -383,6 +383,10 @@ p {
   font-weight: 300;
 }
 
+.card-description {
+  font-size: 1.3rem;
+}
+
 .p-icon {
   font-weight: 400;
 }
@@ -408,15 +412,29 @@ p {
 
 .card {
   background-color: #14253d;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   padding: 1.5rem;
-  max-width: 25rem;
+  max-width: 25em;
   width: 90vw;
 }
-.card > img {
+.card .img-container {
+  display: grid;
+  border-radius: 0.5rem;
   cursor: pointer;
-  background-color: #00fff7;
-  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+.card .img-container:hover::before {
+  content: "";
+  background-color: rgba(0, 255, 247, 0.5);
+  background-image: url(/src/assets/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 3rem;
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  width: 100%;
 }
 .card .p-icon {
   display: inline-flex;
