@@ -1,10 +1,22 @@
 @use '../abstracts/' as *;
 
-main {
+body {
     background-color: $background-color;
+}
+
+main {
     display: grid;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 4em;
+}
+
+.attribution {
+    text-align: center;
+    color: $white;
+
+    a {
+        color: $cyan;
+    }
 }
